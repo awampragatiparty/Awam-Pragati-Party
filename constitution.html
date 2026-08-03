@@ -461,7 +461,86 @@ color:var(--text);
 padding-left:22px;
 
 }
+/* Existing CSS above... */
 
+
+/* ==========================================
+REVEAL ANIMATION
+========================================== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(70px);
+    transition:opacity .9s ease, transform .9s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+RETURN HOME
+========================================== */
+
+.home-section{
+    padding:60px 20px 80px;
+    text-align:center;
+}
+
+.home-btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:18px 48px;
+    border-radius:50px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+    background:linear-gradient(90deg,var(--blue),var(--saffron),var(--green));
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition:.35s;
+}
+
+.home-btn:hover{
+    transform:translateY(-6px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,.22);
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+footer{
+    margin-top:70px;
+    background:linear-gradient(90deg,var(--blue),var(--saffron),var(--green));
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+    position:relative;
+    overflow:hidden;
+}
+
+footer::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,255,255,.18),transparent 35%),
+        radial-gradient(circle at 80% 80%,rgba(255,255,255,.15),transparent 35%);
+    animation:footerGlow 8s linear infinite alternate;
+}
+
+@keyframes footerGlow{
+    from{transform:translateX(-30px);}
+    to{transform:translateX(30px);}
+}
+
+footer h2,
+footer p{
+    position:relative;
+    z-index:2;
+}
 </style>
 
 </head>
