@@ -1,1 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Constitution | Awam Pragati Party</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ==========================================
+   APP CONSTITUTION
+========================================== */
+
+:root{
+
+--blue:#0057B8;
+--saffron:#FF9933;
+--green:#138808;
+
+--dark:#1f2937;
+--text:#4b5563;
+--white:#ffffff;
+
+--glass:rgba(255,255,255,.82);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#f7fbff;
+
+color:var(--dark);
+
+overflow-x:hidden;
+
+}
+
+/* ========================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+180deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+border-radius:20px;
+
+}
+
+/* ========================= */
+
+#progress{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:0;
+height:4px;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+z-index:99999;
+
+}
+
+/* ========================= */
+
+#particles{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+/* ========================= */
+
+header{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(16px);
+
+border-bottom:1px solid rgba(0,0,0,.05);
+
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+z-index:1000;
+
+}
+
+nav{
+
+max-width:1280px;
+
+height:80px;
+
+margin:auto;
+
+padding:0 30px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+object-fit:contain;
+
+}
+
+.logo span{
+
+font-size:24px;
+
+font-weight:800;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+nav ul a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#333;
+
+position:relative;
+
+}
+
+nav ul a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:3px;
+
+border-radius:20px;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+transition:.3s;
+
+}
+
+nav ul a:hover::after{
+
+width:100%;
+
+}
+
+/* ========================= */
+
+.hero{
+
+padding:170px 20px 120px;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+rgba(255,255,255,.93),
+rgba(255,255,255,.95)
+),
+
+url("logo.png") center/360px no-repeat;
+
+opacity:.12;
+
+animation:floatLogo 10s ease-in-out infinite;
+
+}
+
+@keyframes floatLogo{
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:800;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:var(--text);
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:18px 42px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+color:white;
+
+transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+section{
+
+padding:90px 20px;
+
+}
+
+.container{
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:50px;
+
+background:linear-gradient(
+90deg,
+var(--blue),
+var(--saffron),
+var(--green)
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.article{
+
+background:var(--glass);
+
+backdrop-filter:blur(14px);
+
+padding:40px;
+
+border-radius:24px;
+
+margin-bottom:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.article h2{
+
+margin-bottom:20px;
+
+color:var(--blue);
+
+}
+
+.article h3{
+
+margin-top:22px;
+
+margin-bottom:10px;
+
+color:var(--green);
+
+}
+
+.article p,
+.article li{
+
+line-height:1.9;
+
+color:var(--text);
+
+}
+
+.article ul,
+.article ol{
+
+padding-left:22px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="progress"></div>
+
+<canvas id="particles"></canvas>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<img src="logo.png" alt="APP Logo">
+
+<span>AWAM PRAGATI PARTY</span>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="#preamble">Preamble</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#oath">Oath</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Constitution of<br>Awam Pragati Party</h1>
+
+<p>
+
+The supreme governing document of Awam Pragati Party,
+establishing its principles,
+structure,
+rights,
+responsibilities and commitment to democratic values,
+national unity,
+transparency and public service.
+
+</p>
+
+<a href="#articles" class="hero-btn">
+
+Read Constitution
+
+</a>
+
+</div>
+
+</section>
+<!-- =========================
+PREAMBLE
+========================= -->
+
+<section id="preamble">
+
+<div class="container">
+
+<h2 class="title">Preamble</h2>
+
+<div class="article">
+
+<p>
+
+We, the members of <strong>Awam Pragati Party (APP)</strong>,
+unite with the purpose of promoting democratic participation,
+responsible public service, constitutional governance, social harmony,
+transparency, accountability and sustainable national development.
+
+</p>
+
+<p>
+
+This Constitution establishes the principles, organisational structure,
+rights and responsibilities that shall guide the Party in pursuing its
+objectives while respecting the Constitution of India and the rule of law.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ARTICLES
+========================= -->
+
+<section id="articles">
+
+<div class="container">
+
+<h2 class="title">Articles</h2>
+
+<div class="article">
+
+<h2>Article I — Name and Identity</h2>
+
+<h3>Section 1 — Official Name</h3>
+
+<p>
+The official name of the organisation shall be
+<strong>Awam Pragati Party (APP)</strong>.
+</p>
+
+<h3>Section 2 — Purpose</h3>
+
+<p>
+APP exists to encourage democratic participation, public service,
+constitutional values and inclusive national progress.
+</p>
+
+<h3>Section 3 — Official Emblem</h3>
+
+<p>
+The Party may adopt an official emblem, flag and visual identity as
+approved by the National Executive.
+</p>
+
+</div>
+
+<div class="article">
+
+<h2>Article II — Guiding Principles</h2>
+
+<ul>
+
+<li>Respect for the Constitution of India.</li>
+
+<li>Commitment to democracy and the rule of law.</li>
+
+<li>Equality and equal opportunity.</li>
+
+<li>Transparency and accountability.</li>
+
+<li>Peaceful and constructive public dialogue.</li>
+
+<li>Integrity in public life.</li>
+
+<li>Inclusive and sustainable development.</li>
+
+</ul>
+
+</div>
+
+<div class="article">
+
+<h2>Article III — Objectives</h2>
+
+<ul>
+
+<li>Promote public participation in democracy.</li>
+
+<li>Encourage education and civic awareness.</li>
+
+<li>Support economic growth and employment.</li>
+
+<li>Strengthen social harmony and national unity.</li>
+
+<li>Advance innovation and sustainable development.</li>
+
+<li>Promote transparent and accountable governance.</li>
+
+</ul>
+
+</div>
+
+<div class="article">
+
+<h2>Article IV — Membership</h2>
+
+<h3>Eligibility</h3>
+
+<ul>
+
+<li>Accept the Party Constitution.</li>
+
+<li>Follow the Party Code of Conduct.</li>
+
+<li>Respect democratic values and fellow members.</li>
+
+<li>Support the objectives of APP.</li>
+
+</ul>
+
+<h3>Rights</h3>
+
+<ul>
+
+<li>Participate in Party activities.</li>
+
+<li>Vote where eligible.</li>
+
+<li>Submit proposals and recommendations.</li>
+
+<li>Receive equal treatment.</li>
+
+</ul>
+
+</div>
+
+<div class="article">
+
+<h2>Article V — National Leadership</h2>
+
+<p>
+
+The Party shall be administered through a National Leadership Council
+consisting of offices established under this Constitution. Their powers,
+responsibilities and terms of office shall be defined by subsequent
+articles.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+ARTICLE VI
+========================= -->
+
+<div class="article">
+
+<h2>Article VI — President</h2>
+
+<p>
+The President shall serve as the highest constitutional authority of
+Awam Pragati Party and shall provide overall leadership, strategic
+direction and guidance to the organisation.
+</p>
+
+<h3>Powers & Responsibilities</h3>
+
+<ul>
+
+<li>Preside over meetings of the National Leadership Council.</li>
+
+<li>Represent the Party before public institutions and organisations.</li>
+
+<li>Approve major constitutional and organisational decisions.</li>
+
+<li>Protect the Constitution, vision and values of APP.</li>
+
+<li>Promote unity, integrity and discipline throughout the Party.</li>
+
+<li>Issue official directives consistent with this Constitution.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE VII
+========================= -->
+
+<div class="article">
+
+<h2>Article VII — Vice-President</h2>
+
+<p>
+The Vice-President shall assist the President in carrying out executive
+responsibilities and shall act on behalf of the President whenever
+authorised or when the office is temporarily vacant.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Assist in administration and organisational planning.</li>
+
+<li>Coordinate activities between Party departments.</li>
+
+<li>Support implementation of national programmes.</li>
+
+<li>Chair meetings when authorised by the President.</li>
+
+<li>Carry out additional responsibilities assigned by the President.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE VIII
+========================= -->
+
+<div class="article">
+
+<h2>Article VIII — Executive Director</h2>
+
+<p>
+The Executive Director shall serve as the chief executive officer of the
+Party and shall supervise the day-to-day administration of APP.
+</p>
+
+<h3>Election</h3>
+
+<p>
+
+The Executive Director shall be elected by eligible Party members through
+a free, fair and transparent election conducted every six months. A
+person may serve a maximum of two consecutive terms before becoming
+eligible again after one full term has passed.
+
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Implement decisions of the National Leadership Council.</li>
+
+<li>Coordinate all organisational departments.</li>
+
+<li>Supervise daily administration.</li>
+
+<li>Present organisational reports to the leadership.</li>
+
+<li>Ensure effective implementation of Party programmes.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE IX
+========================= -->
+
+<div class="article">
+
+<h2>Article IX — National Executive Council</h2>
+
+<p>
+
+The National Executive Council shall consist of the President,
+Vice-President, Executive Director and other constitutional officers as
+defined by this Constitution.
+
+</p>
+
+<h3>Functions</h3>
+
+<ul>
+
+<li>Develop organisational policy.</li>
+
+<li>Approve strategic initiatives.</li>
+
+<li>Coordinate national programmes.</li>
+
+<li>Monitor implementation of Party decisions.</li>
+
+<li>Review organisational performance.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE X
+========================= -->
+
+<div class="article">
+
+<h2>Article X — Constitutional Offices</h2>
+
+<p>
+
+The following constitutional offices may be established by the Party to
+ensure effective administration.
+
+</p>
+
+<ol>
+
+<li>President</li>
+
+<li>Vice-President</li>
+
+<li>Executive Director</li>
+
+<li>Deputy Chairperson</li>
+
+<li>Secretary-General</li>
+
+<li>Chief Whip</li>
+
+<li>Media Director</li>
+
+<li>Director of Administration</li>
+
+</ol>
+
+<p>
+
+Additional offices may be created whenever approved under the amendment
+procedures of this Constitution.
+
+</p>
+
+</div>
+<!-- =========================
+ARTICLE XI
+========================= -->
+
+<div class="article">
+
+<h2>Article XI — Deputy Chairperson</h2>
+
+<p>
+The Deputy Chairperson shall assist the Executive Leadership in
+coordinating organisational affairs and ensuring the smooth functioning
+of Party activities.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Support executive meetings and organisational planning.</li>
+
+<li>Coordinate internal committees and working groups.</li>
+
+<li>Assist in implementing Party programmes.</li>
+
+<li>Monitor progress of assigned initiatives.</li>
+
+<li>Perform duties assigned by the Executive Leadership.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XII
+========================= -->
+
+<div class="article">
+
+<h2>Article XII — Secretary-General</h2>
+
+<p>
+The Secretary-General shall serve as the principal administrative officer
+of the Party and shall be responsible for maintaining official records
+and organisational communication.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Maintain official documents and records.</li>
+
+<li>Prepare agendas and minutes of meetings.</li>
+
+<li>Issue official notices and communications.</li>
+
+<li>Maintain Party archives and correspondence.</li>
+
+<li>Coordinate communication between Party offices.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XIII
+========================= -->
+
+<div class="article">
+
+<h2>Article XIII — Chief Whip</h2>
+
+<p>
+The Chief Whip shall promote discipline, coordination and adherence to
+the Constitution and Code of Conduct within the Party.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Promote organisational discipline.</li>
+
+<li>Encourage cooperation among members.</li>
+
+<li>Assist in resolving internal disputes.</li>
+
+<li>Monitor compliance with Party policies.</li>
+
+<li>Report disciplinary matters to the Executive Leadership.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XIV
+========================= -->
+
+<div class="article">
+
+<h2>Article XIV — Media Director</h2>
+
+<p>
+The Media Director shall oversee the Party's public communication,
+official publications and digital outreach.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Manage official announcements.</li>
+
+<li>Supervise social media platforms.</li>
+
+<li>Coordinate media campaigns and publications.</li>
+
+<li>Protect the Party's public image.</li>
+
+<li>Ensure that official communications are accurate and responsible.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XV
+========================= -->
+
+<div class="article">
+
+<h2>Article XV — Director of Administration</h2>
+
+<p>
+The Director of Administration shall supervise the Party's operational
+and administrative functions and ensure the efficient management of
+resources and organisational systems.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>Manage administrative operations.</li>
+
+<li>Supervise official platforms and infrastructure.</li>
+
+<li>Coordinate administrative staff.</li>
+
+<li>Maintain organisational security and records.</li>
+
+<li>Support implementation of approved policies.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XVI
+========================= -->
+
+<div class="article">
+
+<h2>Article XVI — Meetings & Decision Making</h2>
+
+<h3>Regular Meetings</h3>
+
+<p>
+The National Leadership Council shall meet periodically to review Party
+activities, evaluate progress and discuss future plans.
+</p>
+
+<h3>Special Meetings</h3>
+
+<p>
+The President or the Executive Director may convene a special meeting
+whenever urgent organisational matters require immediate attention.
+</p>
+
+<h3>Quorum</h3>
+
+<p>
+Unless otherwise provided by this Constitution, decisions shall require
+the presence of at least one-half of the eligible members of the
+National Leadership Council.
+</p>
+
+<h3>Voting</h3>
+
+<p>
+Every eligible member participating in a meeting shall have one vote.
+Except where this Constitution requires a higher majority, decisions
+shall be adopted by a simple majority of votes cast.
+</p>
+
+</div>
+<!-- =========================
+ARTICLE XVII
+========================= -->
+
+<div class="article">
+
+<h2>Article XVII — Elections</h2>
+
+<p>
+The Party shall conduct democratic elections for constitutional offices
+designated as elective under this Constitution.
+</p>
+
+<ul>
+
+<li>Every eligible member shall have one equal vote.</li>
+
+<li>Voting shall be conducted fairly, transparently and impartially.</li>
+
+<li>Election schedules shall be announced in advance.</li>
+
+<li>The candidate receiving the highest number of valid votes shall be declared elected unless otherwise provided by this Constitution.</li>
+
+<li>Election procedures shall uphold integrity, secrecy of the ballot and equal opportunity.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XVIII
+========================= -->
+
+<div class="article">
+
+<h2>Article XVIII — Code of Conduct</h2>
+
+<ul>
+
+<li>Treat every member with dignity and respect.</li>
+
+<li>Promote unity, cooperation and constructive dialogue.</li>
+
+<li>Reject discrimination based on religion, caste, language, gender, ethnicity or region.</li>
+
+<li>Maintain honesty and integrity in all Party activities.</li>
+
+<li>Respect democratic institutions and constitutional values.</li>
+
+<li>Use official Party platforms responsibly.</li>
+
+<li>Protect confidential Party information.</li>
+
+<li>Represent the Party with professionalism and discipline.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XIX
+========================= -->
+
+<div class="article">
+
+<h2>Article XIX — Finance</h2>
+
+<p>
+
+The Party may receive lawful voluntary contributions, membership fees,
+fundraising income and other legal sources permitted under applicable
+laws.
+
+</p>
+
+<ul>
+
+<li>Financial records shall be maintained accurately.</li>
+
+<li>All expenditures shall be properly documented.</li>
+
+<li>Financial transparency and accountability shall be observed.</li>
+
+<li>Party funds shall only be used for authorised organisational purposes.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XX
+========================= -->
+
+<div class="article">
+
+<h2>Article XX — Constitutional Amendments</h2>
+
+<p>
+
+This Constitution may be amended whenever necessary to strengthen the
+organisation and improve its governance.
+
+</p>
+
+<ul>
+
+<li>Any amendment may be proposed before the National Executive Council.</li>
+
+<li>A two-thirds majority of eligible voting members shall be required for approval.</li>
+
+<li>An adopted amendment shall become effective immediately unless otherwise specified.</li>
+
+</ul>
+
+</div>
+
+<!-- =========================
+ARTICLE XXI
+========================= -->
+
+<div class="article">
+
+<h2>Article XXI — Constitutional Supremacy</h2>
+
+<p>
+
+This Constitution shall remain the supreme governing document of the
+Awam Pragati Party.
+
+</p>
+
+<p>
+
+Every office, regulation, policy, programme and organisational decision
+shall remain consistent with the provisions of this Constitution.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+OATH OF MEMBERSHIP
+========================= -->
+
+<section id="oath" class="reveal">
+
+<div class="container">
+
+<h2 class="title">Oath of Membership</h2>
+
+<div class="article">
+
+<p style="font-size:1.18rem;line-height:2;text-align:center;font-style:italic;">
+
+"I solemnly affirm that I shall faithfully uphold the Constitution of
+India and the Constitution of the Awam Pragati Party; respect democracy,
+promote justice, equality, unity and responsible public service; perform
+my duties with honesty, integrity and impartiality; and work for the
+progress, welfare and development of the Nation and its people."
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+RETURN HOME
+========================= -->
+
+<section class="home-section reveal">
+
+<div class="container" style="text-align:center;">
+
+<a href="index.html" class="home-btn">
+
+← Return to Home
+
+</a>
+
+</div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<h2>Awam Pragati Party</h2>
+
+<p><strong>Unity • Progress • Public Service</strong></p>
+
+<p style="margin-top:18px;">
+A Vision of Unity • A Path Towards Progress
+</p>
+
+<p style="margin-top:18px;">
+© 2026 Awam Pragati Party • All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+/* ==========================
+SCROLL PROGRESS BAR
+========================== */
+
+const progress=document.getElementById("progress");
+
+window.addEventListener("scroll",()=>{
+
+const scroll=document.documentElement.scrollTop;
+
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+progress.style.width=(scroll/height)*100+"%";
+
+});
+
+/* ==========================
+REVEAL ANIMATION
+========================== */
+
+const reveals=document.querySelectorAll(".reveal");
+
+function reveal(){
+
+reveals.forEach(item=>{
+
+if(item.getBoundingClientRect().top<window.innerHeight-120){
+
+item.classList.add("active");
+
+}
+
+});
+
+}
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+/* ==========================
+TRICOLOUR PARTICLES
+========================== */
+
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+
+function resize(){
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+}
+
+resize();
+window.addEventListener("resize",resize);
+
+const colors=[
+"#0057B8",
+"#F28C28",
+"#138808"
+];
+
+const particles=[];
+
+for(let i=0;i<90;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+
+y:Math.random()*canvas.height,
+
+r:Math.random()*3+1,
+
+dx:(Math.random()-.5)*0.5,
+
+dy:(Math.random()-.5)*0.5,
+
+a:Math.random()*0.45+.25,
+
+color:colors[Math.floor(Math.random()*colors.length)]
+
+});
+
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+
+ctx.fillStyle=p.color.replace(")",",");
+
+ctx.fillStyle=p.color;
+
+ctx.globalAlpha=p.a;
+
+ctx.fill();
+
+ctx.globalAlpha=1;
+
+p.x+=p.dx;
+p.y+=p.dy;
+
+if(p.x<0)p.x=canvas.width;
+if(p.x>canvas.width)p.x=0;
+if(p.y<0)p.y=canvas.height;
+if(p.y>canvas.height)p.y=0;
+
+});
+
+requestAnimationFrame(animate);
+
+}
+
+animate();
+
+/* ==========================
+ACTIVE NAVIGATION
+========================== */
+
+const navLinks=document.querySelectorAll("nav a");
+
+navLinks.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navLinks.forEach(a=>a.classList.remove("active"));
+
+link.classList.add("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
